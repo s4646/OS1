@@ -15,7 +15,7 @@ int main(int argc, char** argv)
     FILE* ptr2 = fopen(argv[2], "rb");
     if (ptr1 == NULL || ptr2 == NULL)
     {
-        printf("Could not open files\n");
+        printf("Error opening files\n");
         exit(-1);
     }
 

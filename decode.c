@@ -42,12 +42,12 @@ int main(int argc, char** argv)
     int (*decode) (char*, char*, int);
     decode = dlsym(hdl, "decode");
 
-    // encode input
+    // decode input
     char decoded[length];
     memset(decoded,'\0', length);
     int check = decode(argv[2], decoded, length);
     
-    // print encoded input
+    // print decoded input
     for (size_t i = 0; i < length; i++)
     {
         printf("%c", decoded[i]);
