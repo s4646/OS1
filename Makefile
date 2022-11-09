@@ -26,4 +26,4 @@ cmp: cmp.c
 	$(CC) $(FLAGS) cmp.c -o cmp
 
 clean:
-	rm -f *.a *.o *.so *.gch encode decode
+	rm -f *.a *.o *.so *.gch encode decode cmp
