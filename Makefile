@@ -22,6 +22,8 @@ encode.o: encode.c
 decode.o: decode.c
 	$(CC) $(FLAGS) -c decode.c
 
+cmp: cmp.c
+	$(CC) $(FLAGS) cmp.c -o cmp
 
 clean:
 	rm -f *.a *.o *.so *.gch encode decode
