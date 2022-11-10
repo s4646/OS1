@@ -2,13 +2,13 @@
 CC = gcc
 FLAGS = -Wall -Werror -g
 
-all: encode decode
+all: encode decode cmp copy
 
-encode: encode.o codec.h codec1.so codec2.so
-	$(CC) encode.o codec.h $(FLAGS) -fPIC -ldl -o encode
+encode: encode.o codec1.so codec2.so
+	$(CC) encode.o $(FLAGS) -fPIC -ldl -o encode
 
-decode: decode.o codec.h codec1.so codec2.so
-	$(CC) decode.o codec.h $(FLAGS) -fPIC -ldl -o decode
+decode: decode.o codec1.so codec2.so
+	$(CC) decode.o $(FLAGS) -fPIC -ldl -o decode
 
 codec1.so: codec1.c codec.h
 	$(CC) $(FLAGS) -shared codec1.c -fPIC -o codec1.so
