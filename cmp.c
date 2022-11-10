@@ -6,7 +6,7 @@ int main(int argc, char** argv)
     // input validation
     if (argc != 3)
     {
-        printf("Invalid input\n");
+        printf("Usage: ./cmp <file1> <file2>\n");
         exit(-1);
     }
 
