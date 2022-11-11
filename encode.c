@@ -48,10 +48,21 @@ int main(int argc, char** argv)
     int check = encode(argv[2], encoded, length);
     
     // print encoded input
-    for (size_t i = 0; i < length; i++)
+    if (strcmp(argv[1],"codec1") == 0)
     {
-        printf("%c", encoded[i]);
+        for (size_t i = 0; i < length; i++)
+        {
+            printf("%c", encoded[i]);
+        }
     }
+    else
+    {
+        for (size_t i = 0; i < length; i++)
+        {
+            printf("%d", encoded[i]);
+        }
+    }
+    
     printf("\n");
     
     dlclose(hdl);
