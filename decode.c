@@ -30,7 +30,7 @@ int main(int argc, char** argv)
         printf("Invalid input\n");
         exit(-1);
     }
-    const int length = strlen(argv[2]);
+    int length = strlen(argv[2]);
     if (length < 0)
     {
         printf("Invalid input\n");
