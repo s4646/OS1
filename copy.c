@@ -56,7 +56,7 @@ int main(int argc, char** argv)
             perror("Error");
             exit(-1);
         }
-        if (S_ISLNK(buf.st_mode)) // if file is a symbolic link
+        if (S_ISLNK(buf.st_mode)) // file is a symbolic link
         {
             if(readlink(argv[2], linked, 2048) == -1) // get symlink contents
             {
