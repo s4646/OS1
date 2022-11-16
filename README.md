@@ -1,4 +1,4 @@
-*** Don't forget to compile the code using `make` command ***
+**Don't forget to compile the code using `make` command**
 
 ### Compare:
 **Usage:**
