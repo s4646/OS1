@@ -5,7 +5,7 @@
 ```ruby
 ubuntu@ubuntu-ASUS-TUF:~/Documents/Matala1OS$ ./cmp test1.txt test2.txt
 Identical
-ubuntu@ubuntu-ASUS-TUF:~/Documents/Matala1OS$ ./cmp symlink.txt test2.txt
+ubuntu@ubuntu-ASUS-TUF:~/Documents/Matala1OS$ ./cmp symlink test2.txt
 Identical
 ```
 
@@ -14,7 +14,7 @@ Identical
 ```ruby
 ubuntu@ubuntu-ASUS-TUF:~/Documents/Matala1OS$ ./copy test1.txt test2.txt
 file is copied
-ubuntu@ubuntu-ASUS-TUF:~/Documents/Matala1OS$ ./copy symlink.txt test2.txt
+ubuntu@ubuntu-ASUS-TUF:~/Documents/Matala1OS$ ./copy symlink test2.txt
 file is copied
 ```
 
